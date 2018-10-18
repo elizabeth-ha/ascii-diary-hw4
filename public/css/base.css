@@ -6,8 +6,9 @@ header {
   position: relative;
   height: 155px;
   top: -50px;
-  border-bottom: 1px dotted black;
+  border-bottom: 5px dotted #ffb5b5;
   text-align: center;
+  color: #ffb5b5;
 }
 button {
   position: absolute;
@@ -21,8 +22,30 @@ button {
   width: 45%;
   padding: 0;
 }
+.submit {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  border-radius: 0;
+  background: #e5e5e5;
+  border: 0;
+  width: 70px;
+  height: 32px;
+}
 button:hover {
   cursor: pointer;
+}
+h3 {
+  color: #ffb5b5;
+  font-size: 22px;
+}
+input {
+  font-size: 16px;
+  padding: 4px;
+  margin: 4px;
+}
+textarea {
+  width: 400px;
+  height: 200px;
 }
 #title {
   /* padding: 40px 0 0; */
@@ -55,4 +78,21 @@ button:hover {
   width: 80px;
   height: 80px;
   top: 35px;
+}
+
+#filter-form, #art-posts {
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#filter-form {
+  position: relative;
+  top: -130px;
+}
+#art-posts {
+  position: relative;
+  top: -210px;
+}
+.post {
+  border-bottom: 3px dotted #ffb5b5;
 }

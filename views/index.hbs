@@ -1,17 +1,22 @@
+<div id="filter-form">
 <h3>artworks</h3>
 <form method="GET" action="/">
   filter by tag:
 	<input type="text" name="tag">
-	<input type="submit">
+	<input class="submit" type="submit">
 </form>
+</div>
 
-{{#each posts}}
-{{ title }} <br>
-{{ date }} <br>
-<pre>{{ art }}</pre> <br>
-Tags
-{{#each tag as |t|}}
-<a href="/?tag={{t}}">{{t}}</a>,
-{{/each}}
-<br>
-{{/each}}
+<div id="art-posts">
+  {{#each posts}}
+    <div class="post">
+    Title: {{ title }} <br>
+    Date: {{ date }} <br>
+    <pre>{{ art }}</pre> <br>
+    <strong>Tags:</strong>
+    {{#each tag as |t|}}
+    <a href="/?tag={{t}}">{{t}}</a>,
+    {{/each}}
+    </div>
+  {{/each}}
+</div>
