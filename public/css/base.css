@@ -3,24 +3,56 @@ body {
   white-space: pre;
 }
 header {
-  height: 145px;
+  position: relative;
+  height: 155px;
+  top: -50px;
   border-bottom: 1px dotted black;
   text-align: center;
+}
+button {
+  position: absolute;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  border-radius: 0;
+  border: 0;
+  top: 0;
+  background: #e5e5e5;
+  height: 100%;
+  width: 45%;
+  padding: 0;
+}
+button:hover {
+  cursor: pointer;
+}
+#title {
+  /* padding: 40px 0 0; */
+  margin: 0;
+  display: inline;
+}
+#btns {
+  width: 140px;
+  height: 32px;
+  position: relative;
+  bottom: 10px;
+  display: inline-block;
+}
+#home-btn {
+  left: 0;
+}
+#add-btn {
+  right: 0;
+
+}
+#logo1 {
+  left: 25%;
+  transform: scaleX(-1);
+}
+#logo2 {
+  right: 25%;
 }
 .logo {
   position: absolute;
   width: 80px;
   height: 80px;
   top: 35px;
-}
-#title {
-  padding: 40px 0 0;
-  margin: 0;
-}
-#logo1 {
-  left: 300px;
-  transform: scaleX(-1);
-}
-#logo2 {
-  right: 300px;
 }
